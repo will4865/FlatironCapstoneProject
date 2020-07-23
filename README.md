@@ -15,8 +15,8 @@ The data for the project was web-scraped using API Calls, Selenium, BeautifulSou
 
 For this project, I followed the ROSE-MED methodology to guide my data science workflow. 
 
-<img src='/figures/df.png' />
-*Slice of final dataframe after cleaning and feature engineering
+Slice of final dataframe after cleaning and feature engineering <img src='/figures/df.png' />
+
 
 ### Cleaning and EDA
 
