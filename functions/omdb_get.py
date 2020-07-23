@@ -1,4 +1,5 @@
 def omdb_get(list):
+    """Make a call to OMDBapi.com's API and get descriptions of list of films"""
     for film in list:
         apikey='87ed8015'
         url = 'http://www.omdbapi.com/?apikey={}'.format(apikey)
