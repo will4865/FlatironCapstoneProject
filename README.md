@@ -15,9 +15,12 @@ The data for the project was web-scraped using API Calls, Selenium, BeautifulSou
 
 For this project, I followed the ROSE-MED methodology to guide my data science workflow. 
 
-<[Slice of final dataframe after cleaning and feature engineering] img src='/figures/df.png' />
-
+<img src='/figures/df.png' />
 
 ### Cleaning and EDA
 
-The biggest challenge I faced with this project was finding complete scripts online that I would be able to webscrape using Selenium or BeautifulSoup or extract from a PDF file using PDFMiner. By and large, successful movies with noteworthy scripts were available in full script form on IMSDB.com. However, scripts from less notable films were difficult to find as they are not the widely distributed collectibles
+The biggest challenge I faced with this project was finding complete scripts online that I would be able to webscrape using Selenium or BeautifulSoup or extract from a PDF file using PDFMiner. By and large, successful movies with noteworthy scripts were available in full script form on IMSDB.com. However, scripts from less notable films were difficult to find as they are not the widely distributed collectibles. I had to settle for dialogue transcripts from sites like Scripts.com and SubsLikeAScript.com. The difference between the two types of scripts are shown below. 
+
+<img src='figures/bp_script.png' />
+
+<img src='figures/norbit_script.png' />
