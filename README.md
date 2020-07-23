@@ -21,6 +21,18 @@ For this project, I followed the ROSE-MED methodology to guide my data science w
 
 The biggest challenge I faced with this project was finding complete scripts online that I would be able to webscrape using Selenium or BeautifulSoup or extract from a PDF file using PDFMiner. By and large, successful movies with noteworthy scripts were available in full script form on IMSDB.com. However, scripts from less notable films were difficult to find as they are not the widely distributed collectibles. I had to settle for dialogue transcripts from sites like Scripts.com and SubsLikeAScript.com. The difference between the two types of scripts are shown below. 
 
+
+#### Full Script from IMSDB.com
 <img src='figures/bp_script.png' />
 
+
+#### Dialogue Transcript from Scripts.com
 <img src='figures/norbit_script.png' />
+
+I used the TextHero library and Regex to clean and extract only the dialogue from the full scripts so that it matched the dialogue transcripts that I had for a majority of the scripts. TextHero was used to remove stop words, punctuation, whitespace, and tokenize script contents. This information was then used to build out additional features (total word count, words per minute, and vocabulary diversity). 
+
+#### Succesful Film Script Word Cloud
+<img src='figures/bp_script.png' />
+
+#### Failed Film Script Word Cloud
+<img src='figures/bp_script.png' />
