@@ -32,7 +32,9 @@ The biggest challenge I faced with this project was finding complete scripts onl
 I used the TextHero library and Regex to clean and extract only the dialogue from the full scripts so that it matched the dialogue transcripts that I had for a majority of the scripts. TextHero was used to remove stop words, punctuation, whitespace, and tokenize script contents. This information was then used to build out additional features (total word count, words per minute, and vocabulary diversity). 
 
 #### Succesful Film Script Word Cloud
-<img src='figures/bp_script.png' />
+<img src='figures/pos script word cloud.png.png' />
 
 #### Failed Film Script Word Cloud
-<img src='figures/bp_script.png' />
+<img src='figures/neg script word cloud.png.png' />
+
+### Modeling and Model Results
