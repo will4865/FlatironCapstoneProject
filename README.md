@@ -38,3 +38,10 @@ I used the TextHero library and Regex to clean and extract only the dialogue fro
 <img src='figures/neg script word cloud.png' />
 
 ### Modeling and Model Results
+For this project, I instatiated and fit a XGBoosted Random Forest Classifier and a Support Vector Machine using a linear kernel. After using GridSearchCV to select the best hyperparameter values, I was only able to achieve 61% accuracy on the best performing model, the XGBoosted Random Forest Classifier. I believe that I was unable to train a predictive models because I did not have enough data to do so. Model results and visualizations are below. 
+
+#### Model Results DataFrame
+<img src='figures/results_df.png' />
+
+### Model Results Visualizations
+<img src='figures/eval metrics.png' />
