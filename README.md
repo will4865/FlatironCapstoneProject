@@ -37,6 +37,11 @@ I used the TextHero library and Regex to clean and extract only the dialogue fro
 #### Failed Film Script Word Cloud
 <img src='figures/neg script word cloud.png' />
 
+#### Success v Failures By Year
+
+<img src='figures/success_failure_year.png' />
+
+
 ### Modeling & Model Results
 For this project, I instatiated and fit a XGBoosted Random Forest Classifier and a Support Vector Machine using a linear kernel. After using GridSearchCV to select the best hyperparameter values, I was only able to achieve 61% accuracy on the best performing model, the XGBoosted Random Forest Classifier. I believe that I was unable to train a predictive models because I did not have enough data to do so. Model results and visualizations are below. 
 
@@ -47,4 +52,4 @@ For this project, I instatiated and fit a XGBoosted Random Forest Classifier and
 <img src='figures/eval metrics.png' />
 
 ### Conclusion & Future Work
-In conclusion, since I was unable to web scrape enough data for this project I was unable train a predictive model. However, I believe that given the model that I was able to train performed at a higher rate than a coin flip (50%) there is a correlation to the script contents and a film's overall success. In the future, I would like the time to collect more script data and retrain a model with double the amount of data. 
+In conclusion, since I was unable to web scrape enough data for this project I was unable train a predictive model. However, I believe that given the model that I was able to train performed at a higher rate than a coin flip (50%) there is a correlation to the script contents and a film's overall success. In the future, I would like the time to collect more script data and retrain a model with double the amount of data.
