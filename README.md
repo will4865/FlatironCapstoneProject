@@ -37,11 +37,6 @@ I used the TextHero library and Regex to clean and extract only the dialogue fro
 #### Failed Film Script Word Cloud
 <img src='figures/neg script word cloud.png' />
 
-#### Success v Failures By Year
-
-<img src='figures/success_failure_year.png' />
-
-
 ### Modeling & Model Results
 For this project, I instatiated and fit a XGBoosted Random Forest Classifier and a Support Vector Machine using a linear kernel. After using GridSearchCV to select the best hyperparameter values, I was only able to achieve 61% accuracy on the best performing model, the XGBoosted Random Forest Classifier. I believe that I was unable to train a predictive models because I did not have enough data to do so. Model results and visualizations are below. 
 
@@ -51,5 +46,51 @@ For this project, I instatiated and fit a XGBoosted Random Forest Classifier and
 ### Model Results Visualizations
 <img src='figures/eval metrics.png' />
 
-### Conclusion & Future Work
+### EDA Findings 
+
+#### Success v Failures By Year
+While exploring the data I found an interesting trend that I chose to explore further using EDA. While visualizing the total output of success vs. failures in films year over year, there was a contraction in total releases from the years 2017 - 2019. 
+
+<img src='figures/success_failure_year.png' />
+
+#### Box Office Average by Year
+
+Following up on this trend, I chose to plot the average box office gross of all films year over year. The same three years distinguished themselves as they did in the last visualization, this time the average gross grew and remained largely the same over these three years. 
+
+<img src='figures/box_office_year_avg.png' />
+
+#### Box Office Sum by Year
+
+However, when I plotted the sum total of the each year's releases the sum total was less than the box office's peak in 2015. So with the information we have so far we can say that less movies are being released and while they are making more money on average, the total amount of money being taken in is less than the box office peak in 2015. 
+
+<img src='figures/box_office_year_sum.png' />
+
+#### Vocabulary Diversity by Year (Average)
+
+When exploring the Vocabulary Diversity metric that was feature engineered for this project, by and large the diversity of the vocabulary did not adjust all that much year over year
+
+<img src='figures/vocab_diversity_year.png' />
+
+#### Success Metric by Year (Average)
+
+When plotting the success metric feature, there was an overall downturn in the overall success (box office, critic/audience reviews) over the same period of time. 
+
+<img src='figures/success_metric_year.png' />
+
+#### Audience and Critic Score By Year
+
+A similar downturn is evident when plotting the average audience (imdb User) score and average critic (Metacritic) score. 
+
+<img src='figures/audience_critic_year.png' />
+
+#### Average Production Budget by Year
+
+When plotting the production budget average year over year, movies are clearly getting more expensive on average. 
+
+<img src='figures/avg_prod_bud_year.png' />
+
+### EDA Conclusions
+From the visualizations above it is clear that less more expensive films are being made on average and since we do not see a marked difference in their content script-wise, perhaps this is why they are overall less successful. Perhaps films have become more similar in their content and structure, and that audience's and critics alike are becoming tired with the formula that proved so successful just a few year's earlier. Perhaps that is why the models I trained for this project turned out to be so unpredictable in their output: the contents of the scripts are so similar that an outside variable (audience expectations can not be mapped to a model) is closer to the root cause of a film's success.  
+
+### Modeling Conclusions & Future Work
 In conclusion, since I was unable to web scrape enough data for this project I was unable train a predictive model. However, I believe that given the model that I was able to train performed at a higher rate than a coin flip (50%) there is a correlation to the script contents and a film's overall success. In the future, I would like the time to collect more script data and retrain a model with double the amount of data.
